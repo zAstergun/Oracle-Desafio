@@ -1,11 +1,26 @@
 {
-  "name": "alura-geek",
+  "name": "desafio-oracle",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Projeto de ecommerce simples desenvolvido como parte do desafio da Oracle.",
+  "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "live-server",
+    "build": "echo 'Nenhuma tarefa de build definida.'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon script.js"
   },
-  "author": "",
+  "author": "Seu Nome",
   "license": "ISC",
-  "description": ""
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0"
+  },
+  "keywords": [
+    "ecommerce",
+    "desafio",
+    "oracle"
+  ]
 }
