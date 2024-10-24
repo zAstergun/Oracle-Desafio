@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Action Figure Sukuna",
+      "price": 250,
+      "image": "./assets/Sukuna.webp"
+    },
+    {
+      "id": 2,
+      "title": " Action Figure Sukuna Chibi",
+      "price": 100,
+      "image": "./assets/Itadori Sukuna.webp"
+    },
+    {
+      "id": 3,
+      "title": " Action Figure Satoru Gojo",
+      "price": 120,
+      "image": "./assets/Gojo.webp"
+    }    
+  ]
+}

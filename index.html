@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <img class="logo" src="./assets/logo.svg" alt="Logo Alura Geek.">
+    </header>
+
+    <main class="main-content">
+
+
+        <div class="product-section">
+            <h1>MEUS PRODUTOS:</h1>
+            <div id="product-list" class="product-list">
+                <!-- Os cards serão inseridos aqui dinamicamente -->
+            </div>
+        </div>
+
+        <section class="form-container">
+            <h2>Adicionar <br> Produto:</h2>
+            <form class="add-product-form">
+                <fieldset class="form-fields">
+                    <input type="text" placeholder="nome..." name="product-name" required>
+                    <input type="number" placeholder="valor..." name="product-price" required>
+                    <input type="text" placeholder="imagem..." name="product-image" required>
+                </fieldset>
+                <div class="form-buttons">
+                    <button id="btn-save" class="btn-save" type="submit">Salvar</button>
+                    <button id="btn-clear" class="btn-clear" type="button">Limpar</button>
+                </div>
+            </form>
+
+            <div id="success-message"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img src="./assets/logo.svg" alt="Logo Alura Geek.">
+        <h2>DESENVOLVIDO POR ASTER</h2>
+        <h3>Oracle One 2024</h3>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Press Start 2P", system-ui;
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: purple;
+  width: 100%;
+}
+
+.header img {
+  padding: 15px 0px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Cards */
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 45rem;
+  height: 55rem;
+  overflow-y: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  margin-left: 1rem;
+  border: solid 1px white;
+  border-radius: 10px;
+}
+
+.product-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: purple;
+  border: 3px solid black;
+  padding: 18px;
+  margin: 0.8rem;
+  width: 9rem;
+  border-radius: 10px;
+}
+
+.product-card img {
+  width: 10rem;
+  height: auto;
+  border: solid 2px black;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.product-title {
+  font-size: 0.6rem;
+  margin-top: 1rem;
+  text-align: center;
+  line-height: 0.8rem;
+}
+
+.price-container {
+  width: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #ffff;
+  font-size: 0.7rem;
+}
+
+.product-card .trash-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  border: none;
+}
+
+.trash-icon:hover {
+  transform: scale(1.1);
+}
+
+/*Form */
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  width: 40rem;
+}
+
+.form-container h2 {
+  font-size: 1.5rem;
+  padding: 10px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 25rem;
+  border: none;
+}
+
+.form-fields input {
+  border: 3px solid purple;
+  ;
+  border-radius: 50px;
+  padding: 15px 15px;
+  height: 2rem;
+}
+
+.form-fields input::placeholder {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  font-weight: 700;
+  color: purple;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 22rem;
+  margin-left: 2rem;
+}
+
+.btn-save {
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 15px 40px;
+}
+
+.btn-clear {
+  background-color: white;
+  color: purple;
+  border: 3px solid purple;
+  border-radius: 15px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 15px 40px;
+}
+
+#success-message {
+  display: none;
+  color: green;
+  margin-top: 10px
+}
+
+/* Footer */
+
+.footer {
+  bottom: 0;
+  width: 100%;
+  background-color: purple;
+  color: white;
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.footer h2 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 0.8rem;
+}
+
+.footer h3 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 0.8rem;
+}
+
+/*Responsive*/
+
+@media (max-width: 768px) {
+  .main-content {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+  }
+
+  .logo {
+      width: 25rem;
+  }
+
+  .form-container {
+      margin-top: 3rem;
+  }
+
+  .form-container h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+  }
+
+  .form-fields {
+      width: 90%;
+  }
+
+  .form-buttons {
+      width: 80%;
+      margin-right: 2rem;
+  }
+
+  .btn-save,
+  .btn-clear {
+      font-size: 1rem;
+      margin: 0.5rem;
+      margin-bottom: 5rem;
+  }
+
+  .product-list {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+  }
+
+  .product-card {
+      width: 75%;
+  }
+
+  .footer h2,
+  .footer h3 {
+      font-size: 1rem;
+  }
+}
